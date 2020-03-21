@@ -1,0 +1,29 @@
+# Vezba 2 komande Miloš Mirić RT6917
+# Repo link: https://github.com/miricmilos-Ist/IST-Vezba2
+
+## Povlačenje fajlova sa udaljenog repo. 
+> git init  # Inicijalizacija praznog lokalnog repozitorijuma
+> git pull https://github.com/cvicko/ISTvezba1.git # Povlačenje fajlova sa udaljenog repo. i automatsko spajanje (i commit-ovanje) sa tekućom granom lokalnog repo. 
+
+## Provera i brisanje repo.
+> git status # Repozitorijum postoji, svi fajlovi sa udaljenog repo. su snimljeni pri povlačenju
+> Repozitorijum se uklanja brisanjem .git foldera
+
+## Udaljeni repozitorijum
+# Nakon kreiranja sa iste dve komande iz prve stavke kreiramo
+# i povlačimo fajlove na lokal
+> Načinjene izmene: Drugi fajl preimenovan, sadržaj prvog izmenjen
+> git add . # Dodavanja svih izmenjenih fajlova na scenu (dodaje se i činjenica da je neki fajl obrisan)
+> git commit -m "dugacka poruka" # Snimljene promene na sceni uz obaveznu poruku
+> git remote add origin https://github.com/miricmilos-Ist/IST-Vezba2.git
+# Povezan udaljeni sa lokalnim repozitorijumom
+> git push -u origin master # Snimanje promena na udaljeni repo. 
+> git push # Nakon prvog snimanja 
+
+## Grananje
+# Nakon pravljenja grane na udaljenom repo.
+> git fetch # Ažuriran lokalni repo na osnovu udaljenog, znači dodata je grana1 i na lokalni 
+> git checkout grana1 # Postavljanje grana1 kao tekuću granu
+> git add ., git commit... # snimanje izmena
+> git merge grana1 # Spajanje tekuće master grane sa grana1 granom
+> git push # Snimanje na udaljeni repo
